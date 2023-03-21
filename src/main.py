@@ -11,7 +11,7 @@ def home():
 
 @app.get("/api/{path}")
 def gigachad(path: str):
-    if path == generate_path():
+    if path == generate_path(69):
         return "CUM!"
 
     raise HTTPException(status_code=418, detail="I'm a teapot")
