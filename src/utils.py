@@ -7,7 +7,3 @@ def generate_path(length) -> str:
     result_str = ''.join(random.choice(source) for i in range(length))
     
     return result_str
-
-
-
-
