@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException
-from utils import read_path, generate_path
+from utils import generate_path
 
 app = FastAPI()
 
