@@ -9,13 +9,5 @@ def generate_path(length) -> str:
     return result_str
 
 
-def read_path() -> str:
-    with open("path.txt", "r") as file:
-        path = file.readline()
-        return path
 
-
-def write_path(path: str) -> None:
-    with open("path.txt", "w") as file:
-        file.write(path)
 

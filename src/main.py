@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException
-from utils import read_path
+from utils import read_path, generate_path
 
 app = FastAPI()
 
@@ -11,7 +11,7 @@ def home():
 
 @app.get("/api/{path}")
 def gigachad(path: str):
-    if path == read_path():
+    if path == generate_path():
         return "CUM!"
 
     raise HTTPException(status_code=418, detail="I'm a teapot")
